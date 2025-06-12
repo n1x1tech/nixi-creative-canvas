@@ -18,24 +18,36 @@ const Hero = () => {
             <span className="text-foreground">TECHNOLOGY</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Transforming businesses through cutting-edge AI consulting, workflow design, 
-            and creative technology solutions
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto">
+            Transforming education and enterprise through intelligent AI solutions. 
+            From university learning assessment tools to enterprise workflow optimization.
           </p>
+
+          <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-primary">
+            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+              Radford University Partner
+            </div>
+            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+              IMPACT Lab Collaborator
+            </div>
+            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+              Enterprise AI Solutions
+            </div>
+          </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={scrollToServices}
               className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg interactive hover-scale"
             >
-              Explore Services
+              View Our Work
             </Button>
             <Button 
               variant="outline" 
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 text-lg interactive hover-scale"
             >
-              Get In Touch
+              Start Your Project
             </Button>
           </div>
         </div>

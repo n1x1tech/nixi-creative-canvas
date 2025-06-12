@@ -8,10 +8,17 @@ const Footer = () => {
             NIXI TECHNOLOGY
           </div>
           <p className="text-muted-foreground mb-6">
-            Transforming businesses through intelligent technology solutions
+            Transforming education and enterprise through intelligent AI solutions
           </p>
+          <div className="flex justify-center space-x-8 mb-6 text-sm text-muted-foreground">
+            <span>AI Learning Assessment</span>
+            <span>•</span>
+            <span>Enterprise Workflow Design</span>
+            <span>•</span>
+            <span>University Partnerships</span>
+          </div>
           <div className="text-sm text-muted-foreground">
-            © 2024 Nixi Technology. All rights reserved.
+            © 2024 Nixi Technology. All rights reserved. | nixitechnology@gmail.com
           </div>
         </div>
       </div>

@@ -26,16 +26,18 @@ const Creative = () => {
 
   const creativeServices = [
     {
-      title: "Creative Technology",
-      description: "Innovative tech solutions that push creative boundaries",
+      title: "AI-Powered Learning Technology",
+      description: "Innovative educational technology solutions that enhance learning outcomes",
       image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop",
-      services: ["Interactive Experiences", "Digital Art Installations", "VR/AR Solutions", "Creative Coding"]
+      services: ["Learning Assessment AI", "Educational Analytics", "Adaptive Learning Systems", "Student Progress Tracking"],
+      highlight: "Radford University IMPACT Lab Partnership"
     },
     {
-      title: "Creative Services",
-      description: "Full-spectrum creative solutions for modern brands",
+      title: "Enterprise AI Solutions",
+      description: "Custom AI implementations that drive business transformation and efficiency",
       image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
-      services: ["Brand Strategy", "Digital Design", "Motion Graphics", "User Experience"]
+      services: ["Workflow Automation", "Predictive Analytics", "Process Optimization", "AI Strategy Consulting"],
+      highlight: "Active Enterprise Client Projects"
     }
   ];
 
@@ -64,10 +66,10 @@ const Creative = () => {
       <div className="container mx-auto px-6 relative z-20">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Creative Innovation
+            Innovation in Action
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Where technology meets creativity to deliver extraordinary experiences
+            Where cutting-edge AI meets real-world applications in education and enterprise
           </p>
           <p className="text-sm text-primary mt-4">
             Move your mouse around this section to see the interactive effect!
@@ -84,6 +86,10 @@ const Creative = () => {
                     alt={service.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
+                </div>
+                
+                <div className="bg-accent/20 text-accent px-3 py-1 rounded-full text-xs inline-block mb-4">
+                  {service.highlight}
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors">

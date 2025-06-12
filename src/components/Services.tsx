@@ -4,16 +4,18 @@ import { Card, CardContent } from '@/components/ui/card';
 const Services = () => {
   const services = [
     {
-      title: "AI Consulting",
-      description: "Strategic AI implementation and optimization for enterprise solutions",
+      title: "AI Consulting & Learning Tools",
+      description: "Strategic AI implementation for educational institutions and enterprise solutions",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
-      features: ["Machine Learning Strategy", "Data Analytics", "Process Automation", "AI Integration"]
+      features: ["AI Learning Assessment", "Educational Technology", "Custom AI Solutions", "Enterprise Integration"],
+      caseStudy: "Partnered with Radford University's IMPACT Lab to develop cutting-edge AI learning and assessment tools"
     },
     {
-      title: "Workflow Design",
-      description: "Streamlined business processes and operational efficiency solutions",
+      title: "Enterprise Workflow Design",
+      description: "Streamlined business processes and AI-powered operational efficiency solutions",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      features: ["Process Optimization", "System Integration", "Automation Design", "Performance Metrics"]
+      features: ["Process Automation", "AI Integration", "System Optimization", "Performance Analytics"],
+      caseStudy: "Currently developing AI-powered workflow solutions for 2 enterprise clients, transforming their operational efficiency"
     }
   ];
 
@@ -22,10 +24,10 @@ const Services = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Our Services
+            Our Expertise
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Empowering businesses with intelligent solutions and streamlined workflows
+            Specialized AI solutions for education and enterprise, with proven results in learning assessment and workflow optimization
           </p>
         </div>
 
@@ -45,9 +47,15 @@ const Services = () => {
                   {service.title}
                 </h3>
                 
-                <p className="text-muted-foreground mb-6">
+                <p className="text-muted-foreground mb-4">
                   {service.description}
                 </p>
+
+                <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mb-6">
+                  <p className="text-sm text-foreground font-medium">
+                    <span className="text-primary">Case Study:</span> {service.caseStudy}
+                  </p>
+                </div>
                 
                 <ul className="space-y-2">
                   {service.features.map((feature, featureIndex) => (
