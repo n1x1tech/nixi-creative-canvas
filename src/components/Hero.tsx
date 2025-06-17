@@ -25,13 +25,13 @@ const Hero = () => {
 
           <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-primary">
             <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
-              Radford University Partner
-            </div>
-            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
-              IMPACT Lab Collaborator
-            </div>
-            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
               Enterprise AI Solutions
+            </div>
+            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+              Education AI Solutions
+            </div>
+            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+              Creative Technology
             </div>
           </div>
           
