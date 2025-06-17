@@ -12,7 +12,7 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="fade-in-up">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 font-orbitron">
             <span className="gradient-text">NIXI</span>
             <br />
             <span className="text-foreground">TECHNOLOGY</span>

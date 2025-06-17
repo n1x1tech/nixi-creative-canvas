@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className="bg-background border-t border-border py-12">
       <div className="container mx-auto px-6">
         <div className="text-center">
-          <div className="text-2xl font-bold gradient-text mb-4">
+          <div className="text-2xl font-bold gradient-text mb-4 font-orbitron">
             NIXI TECHNOLOGY
           </div>
           <p className="text-muted-foreground mb-6">
