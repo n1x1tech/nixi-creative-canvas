@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground">Email</h4>
-                  <p className="text-muted-foreground">nixitechnology@gmail.com</p>
+                  <p className="text-muted-foreground">ncorrigan@nixitechnology.com</p>
                 </div>
               </div>
 
@@ -83,11 +83,11 @@ const Contact = () => {
                   <div className="w-6 h-6 bg-primary rounded-full" />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-foreground">Response Time</h4>
+               <h4 className="font-semibold text-foreground">Response Time</h4>
                   <p className="text-muted-foreground">Within 24 hours</p>
                 </div>
               </div>
-
+              
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
                   <div className="w-6 h-6 bg-primary rounded-full" />
