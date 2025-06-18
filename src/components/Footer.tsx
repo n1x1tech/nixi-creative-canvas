@@ -18,7 +18,7 @@ const Footer = () => {
             <span>University Partnerships</span>
           </div>
           <div className="text-sm text-muted-foreground">
-            © 2024 Nixi Technology. All rights reserved. | nixitechnology@gmail.com
+            © 2025 Nixi Technology. All rights reserved. | nixitechnology@gmail.com
           </div>
         </div>
       </div>
