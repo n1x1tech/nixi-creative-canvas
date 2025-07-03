@@ -1,7 +1,10 @@
 
 import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   const scrollToServices = () => {
     document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -23,16 +26,31 @@ const Hero = () => {
             From university learning assessment tools to enterprise workflow optimization.
           </p>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm text-primary">
-            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+          <div className="flex flex-wrap justify-center gap-3 mb-8 text-sm">
+            <button 
+              onClick={() => navigate('/ai-consulting')}
+              className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20 text-primary hover:bg-primary/20 transition-colors interactive"
+            >
+              AI Consulting & Learning Tools
+            </button>
+            <button 
+              onClick={() => navigate('/ai-learning')}
+              className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20 text-primary hover:bg-primary/20 transition-colors interactive"
+            >
+              AI-Powered Learning Technology
+            </button>
+            <button 
+              onClick={() => navigate('/enterprise-ai')}
+              className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20 text-primary hover:bg-primary/20 transition-colors interactive"
+            >
               Enterprise AI Solutions
-            </div>
-            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
-              Education AI Solutions
-            </div>
-            <div className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20">
+            </button>
+            <button 
+              onClick={() => navigate('/creative-technology')}
+              className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20 text-primary hover:bg-primary/20 transition-colors interactive"
+            >
               Creative Technology
-            </div>
+            </button>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

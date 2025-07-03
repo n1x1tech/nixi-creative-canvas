@@ -1,8 +1,10 @@
 
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,7 +16,15 @@ const Navigation = () => {
   }, []);
 
   const scrollToSection = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    // If we're not on the home page, navigate there first
+    if (window.location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => {
+        document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+      }, 100);
+    } else {
+      document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -23,9 +33,12 @@ const Navigation = () => {
     }`}>
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-text font-orbitron">
+          <button 
+            onClick={() => navigate('/')}
+            className="text-2xl font-bold gradient-text font-orbitron interactive"
+          >
             NIXI TECHNOLOGY
-          </div>
+          </button>
           
           <div className="hidden md:flex space-x-8">
             <button 
@@ -35,16 +48,28 @@ const Navigation = () => {
               Home
             </button>
             <button 
-              onClick={() => scrollToSection('services')}
+              onClick={() => navigate('/ai-consulting')}
               className="text-foreground hover:text-primary transition-colors interactive"
             >
-              Services
+              AI Consulting
             </button>
             <button 
-              onClick={() => scrollToSection('creative')}
+              onClick={() => navigate('/ai-learning')}
               className="text-foreground hover:text-primary transition-colors interactive"
             >
-              Creative
+              AI Learning
+            </button>
+            <button 
+              onClick={() => navigate('/enterprise-ai')}
+              className="text-foreground hover:text-primary transition-colors interactive"
+            >
+              Enterprise AI
+            </button>
+            <button 
+              onClick={() => navigate('/creative-technology')}
+              className="text-foreground hover:text-primary transition-colors interactive"
+            >
+              Creative Tech
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
