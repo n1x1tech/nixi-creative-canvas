@@ -32,10 +32,11 @@ const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Start Your AI Journey
+            Let's Discuss Your Project
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your educational institution or enterprise with AI? Let's discuss your project.
+            Ready to explore how AI can transform your educational institution or enterprise? 
+            Let's have a conversation about your goals and challenges.
           </p>
         </div>
 
@@ -43,11 +44,12 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-bold mb-4 text-foreground">
-                Let's Build Something Amazing Together
+                Experience That Delivers Results
               </h3>
-              <p className="text-muted-foreground mb-6">
-                Whether you need AI learning assessment tools like we've built with Radford University, 
-                or enterprise workflow solutions for your business, we're here to turn your vision into reality.
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                From pioneering AI learning assessment tools with Radford University's IMPACT Lab 
+                to designing enterprise workflow solutions, we bring proven expertise to every project. 
+                Our approach combines technical innovation with practical implementation.
               </p>
             </div>
 
@@ -67,35 +69,18 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                  <div className="w-6 h-6 bg-primary rounded-full" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground">Email</h4>
-                  <p className="text-muted-foreground">ncorrigan@nixitechnology.com</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                  <div className="w-6 h-6 bg-primary rounded-full" />
-                </div>
-                <div>
-               <h4 className="font-semibold text-foreground">Response Time</h4>
-                  <p className="text-muted-foreground">Within 24 hours</p>
-                </div>
-              </div>
-              
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
-                  <div className="w-6 h-6 bg-primary rounded-full" />
-                </div>
-                <div>
-                  <h4 className="font-semibold text-foreground">Consultation</h4>
-                  <p className="text-muted-foreground">Free initial project assessment</p>
-                </div>
+            <div className="bg-background/50 border border-border rounded-lg p-6">
+              <h4 className="font-semibold text-foreground mb-3">Get In Touch</h4>
+              <div className="space-y-2 text-sm">
+                <p className="text-muted-foreground">
+                  <span className="font-medium text-foreground">Email:</span> ncorrigan@nixitechnology.com
+                </p>
+                <p className="text-muted-foreground">
+                  <span className="font-medium text-foreground">Response:</span> Within 24 hours
+                </p>
+                <p className="text-muted-foreground">
+                  <span className="font-medium text-foreground">Consultation:</span> Complimentary project assessment
+                </p>
               </div>
             </div>
           </div>
@@ -165,7 +150,7 @@ const Contact = () => {
                   type="submit" 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 interactive hover-scale"
                 >
-                  Start Your Project
+                  Send Message
                 </Button>
               </form>
             </CardContent>
