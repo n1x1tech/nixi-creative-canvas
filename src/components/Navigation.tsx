@@ -42,12 +42,6 @@ const Navigation = () => {
           
           <div className="hidden md:flex space-x-8">
             <button 
-              onClick={() => scrollToSection('home')}
-              className="text-foreground hover:text-primary transition-colors interactive"
-            >
-              Home
-            </button>
-            <button 
               onClick={() => navigate('/ai-consulting')}
               className="text-foreground hover:text-primary transition-colors interactive"
             >
