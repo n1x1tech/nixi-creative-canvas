@@ -19,10 +19,10 @@ const AIConsulting = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16 fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 gradient-text font-orbitron">
-              AI CONSULTING &<br />LEARNING TOOLS
+              AI CONSULTING &<br />LEARNING
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto">
-              Strategic AI implementation for educational institutions with proven results in learning assessment and educational technology partnerships.
+              Strategic AI implementation for educational institutions with proven results in learning assessment, accessibility compliance, and educational technology partnerships.
             </p>
           </div>
         </div>
@@ -45,13 +45,13 @@ const AIConsulting = () => {
                 <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mb-6">
                   <h3 className="font-bold text-primary mb-2">Radford University IMPACT Lab Partnership</h3>
                   <p className="text-sm text-foreground">
-                    Pioneering AI learning and assessment tools in collaboration with Radford University's IMPACT Lab, developing cutting-edge educational technology solutions.
+                    Pioneering AI learning and assessment tools in collaboration with Radford University's IMPACT Lab, developing cutting-edge educational technology solutions with accessibility features.
                   </p>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Educational AI Assessment</h3>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">Educational AI Assessment & Learning</h3>
                 <p className="text-muted-foreground mb-4">
-                  Advanced AI-powered tools for evaluating student learning outcomes and educational effectiveness.
+                  Advanced AI-powered tools for evaluating student learning outcomes, generating accessible content, and ensuring WCAG 2.2 compliance in educational technology.
                 </p>
                 
                 <ul className="space-y-2">
@@ -61,15 +61,19 @@ const AIConsulting = () => {
                   </li>
                   <li className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    Audio Description Generation
+                  </li>
+                  <li className="flex items-center text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    WCAG 2.2 Compliance Solutions
+                  </li>
+                  <li className="flex items-center text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
                     Educational Data Analytics
                   </li>
                   <li className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3" />
                     Student Progress Tracking
-                  </li>
-                  <li className="flex items-center text-sm text-muted-foreground">
-                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
-                    Custom AI Integration
                   </li>
                 </ul>
               </CardContent>
@@ -88,19 +92,23 @@ const AIConsulting = () => {
                 <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mb-6">
                   <h3 className="font-bold text-primary mb-2">Strategic AI Implementation</h3>
                   <p className="text-sm text-foreground">
-                    Comprehensive consulting services for educational institutions looking to integrate AI into their learning systems and processes.
+                    Comprehensive consulting services for educational institutions looking to integrate AI into their learning systems with full accessibility support and compliance.
                   </p>
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-4 text-foreground">Educational Technology Consulting</h3>
                 <p className="text-muted-foreground mb-4">
-                  Strategic guidance for implementing AI solutions in educational environments with measurable outcomes.
+                  Strategic guidance for implementing AI solutions in educational environments with measurable outcomes and accessibility at the forefront.
                 </p>
                 
                 <ul className="space-y-2">
                   <li className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3" />
                     AI Strategy Development
+                  </li>
+                  <li className="flex items-center text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    Accessibility Integration
                   </li>
                   <li className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3" />

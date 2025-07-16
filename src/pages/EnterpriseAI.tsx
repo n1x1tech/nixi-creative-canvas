@@ -22,7 +22,7 @@ const EnterpriseAI = () => {
               ENTERPRISE<br />AI SOLUTIONS
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto">
-              Streamlined business processes and AI-powered operational efficiency solutions that transform enterprise workflows and drive measurable results.
+              Comprehensive AI-powered business solutions including workflow design, process automation, and operational efficiency optimization that transform enterprise operations.
             </p>
           </div>
         </div>
@@ -37,7 +37,7 @@ const EnterpriseAI = () => {
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden border-2 border-border">
                   <img 
                     src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop" 
-                    alt="Enterprise Workflow Design"
+                    alt="AI Workflow Design"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -45,16 +45,20 @@ const EnterpriseAI = () => {
                 <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mb-6">
                   <h3 className="font-bold text-primary mb-2">Active Enterprise Projects</h3>
                   <p className="text-sm text-foreground">
-                    Currently developing AI-powered workflow solutions for 2 enterprise clients, transforming their operational efficiency and business processes.
+                    Currently developing AI-powered workflow solutions for 2 enterprise clients, transforming their operational efficiency through custom automation and intelligent process design.
                   </p>
                 </div>
                 
-                <h3 className="text-2xl font-bold mb-4 text-foreground">Workflow Automation & Design</h3>
+                <h3 className="text-2xl font-bold mb-4 text-foreground">AI Workflow Design & Automation</h3>
                 <p className="text-muted-foreground mb-4">
-                  Custom AI implementations that streamline business processes and eliminate operational bottlenecks.
+                  Custom AI implementations that streamline business processes, eliminate operational bottlenecks, and create intelligent workflow systems.
                 </p>
                 
                 <ul className="space-y-2">
+                  <li className="flex items-center text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    AI Workflow Design
+                  </li>
                   <li className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3" />
                     Process Automation
@@ -80,7 +84,7 @@ const EnterpriseAI = () => {
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden border-2 border-border">
                   <img 
                     src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop" 
-                    alt="AI Integration Solutions"
+                    alt="Enterprise AI Integration"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -88,13 +92,13 @@ const EnterpriseAI = () => {
                 <div className="bg-primary/10 border border-primary/20 rounded-lg p-4 mb-6">
                   <h3 className="font-bold text-primary mb-2">AI Strategy & Implementation</h3>
                   <p className="text-sm text-foreground">
-                    Comprehensive AI strategy consulting and implementation services that drive business transformation and competitive advantage.
+                    Comprehensive AI strategy consulting and implementation services that drive business transformation, competitive advantage, and measurable ROI.
                   </p>
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-4 text-foreground">AI Integration & Consulting</h3>
                 <p className="text-muted-foreground mb-4">
-                  Strategic AI implementations that enhance decision-making, automate complex tasks, and unlock new business opportunities.
+                  Strategic AI implementations that enhance decision-making, automate complex tasks, and unlock new business opportunities through intelligent systems.
                 </p>
                 
                 <ul className="space-y-2">
@@ -113,6 +117,10 @@ const EnterpriseAI = () => {
                   <li className="flex items-center text-sm text-muted-foreground">
                     <div className="w-2 h-2 bg-primary rounded-full mr-3" />
                     Custom AI Solutions
+                  </li>
+                  <li className="flex items-center text-sm text-muted-foreground">
+                    <div className="w-2 h-2 bg-primary rounded-full mr-3" />
+                    Enterprise Integration
                   </li>
                 </ul>
               </CardContent>

@@ -23,7 +23,7 @@ const Hero = () => {
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-4xl mx-auto">
             Transforming education and enterprise through intelligent AI solutions. 
-            From university learning assessment tools to enterprise workflow optimization.
+            From university learning assessment tools to enterprise workflow optimization and creative technology projects.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3 mb-8 text-sm">
@@ -31,13 +31,7 @@ const Hero = () => {
               onClick={() => navigate('/ai-consulting')}
               className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20 text-primary hover:bg-primary/20 transition-colors interactive"
             >
-              AI Consulting & Learning Tools
-            </button>
-            <button 
-              onClick={() => navigate('/ai-learning')}
-              className="bg-primary/10 px-4 py-2 rounded-full border border-primary/20 text-primary hover:bg-primary/20 transition-colors interactive"
-            >
-              AI-Powered Learning Technology
+              AI Consulting & Learning
             </button>
             <button 
               onClick={() => navigate('/enterprise-ai')}

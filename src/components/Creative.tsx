@@ -24,20 +24,34 @@ const Creative = () => {
     return () => document.removeEventListener('mousemove', handleMouseMove);
   }, [isInSection]);
 
-  const creativeServices = [
+  const creativeProjects = [
     {
-      title: "AI-Powered Learning Technology",
-      description: "Innovative educational technology solutions that enhance learning outcomes",
-      image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop",
-      services: ["Learning Assessment AI", "Educational Analytics", "Adaptive Learning Systems", "Student Progress Tracking"],
-      highlight: "Radford University IMPACT Lab Partnership"
+      title: "Live Event Technology",
+      description: "Cutting-edge audiovisual solutions for conferences, concerts, and corporate events",
+      image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
+      services: ["Audio Engineering", "Visual Systems", "Live Streaming", "Event Automation"],
+      highlight: "Professional Event Solutions"
     },
     {
-      title: "Enterprise AI Solutions",
-      description: "Custom AI implementations that drive business transformation and efficiency",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=400&fit=crop",
-      services: ["Workflow Automation", "Predictive Analytics", "Process Optimization", "AI Strategy Consulting"],
-      highlight: "Active Enterprise Client Projects"
+      title: "Projection Mapping & Interactive Media",
+      description: "Immersive visual experiences and interactive installations using advanced projection technology",
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop",
+      services: ["3D Projection Mapping", "Interactive Installations", "Visual Effects", "Content Creation"],
+      highlight: "Immersive Visual Experiences"
+    },
+    {
+      title: "Website Building & Digital Solutions",
+      description: "Custom web development with modern technologies and AI-powered features",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
+      services: ["Custom Web Development", "AI Integration", "Responsive Design", "Performance Optimization"],
+      highlight: "Modern Web Technologies"
+    },
+    {
+      title: "Creative Technology Integration",
+      description: "Innovative technology solutions that bridge creativity and functionality",
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop",
+      services: ["IoT Solutions", "Smart Installations", "Creative Coding", "Technology Consulting"],
+      highlight: "Innovation at the Intersection"
     }
   ];
 
@@ -66,10 +80,10 @@ const Creative = () => {
       <div className="container mx-auto px-6 relative z-20">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">
-            Innovation in Action
+            Creative Technology Showcase
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Where cutting-edge AI meets real-world applications in education and enterprise
+            Where innovation meets creativity - showcasing our diverse portfolio of technology-driven creative projects
           </p>
           <p className="text-sm text-primary mt-4">
             Move your mouse around this section to see the interactive effect!
@@ -77,31 +91,31 @@ const Creative = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-          {creativeServices.map((service, index) => (
+          {creativeProjects.map((project, index) => (
             <Card key={index} className="bg-card/80 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-300 hover-scale group interactive">
               <CardContent className="p-8">
                 <div className="aspect-video mb-6 rounded-lg overflow-hidden border-2 border-border group-hover:border-primary/50 transition-colors">
                   <img 
-                    src={service.image} 
-                    alt={service.title}
+                    src={project.image} 
+                    alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
                 
                 <div className="bg-accent/20 text-accent px-3 py-1 rounded-full text-xs inline-block mb-4">
-                  {service.highlight}
+                  {project.highlight}
                 </div>
                 
                 <h3 className="text-2xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors">
-                  {service.title}
+                  {project.title}
                 </h3>
                 
                 <p className="text-muted-foreground mb-6">
-                  {service.description}
+                  {project.description}
                 </p>
                 
                 <div className="grid grid-cols-2 gap-2">
-                  {service.services.map((item, itemIndex) => (
+                  {project.services.map((item, itemIndex) => (
                     <div key={itemIndex} className="bg-secondary/50 rounded-lg p-3 text-center text-sm text-foreground hover:bg-primary/20 transition-colors interactive">
                       {item}
                     </div>

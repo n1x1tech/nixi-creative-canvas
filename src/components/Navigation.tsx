@@ -45,25 +45,19 @@ const Navigation = () => {
               onClick={() => navigate('/ai-consulting')}
               className="text-foreground hover:text-primary transition-colors interactive"
             >
-              AI Consulting
-            </button>
-            <button 
-              onClick={() => navigate('/ai-learning')}
-              className="text-foreground hover:text-primary transition-colors interactive"
-            >
-              AI Learning
+              AI Consulting & Learning
             </button>
             <button 
               onClick={() => navigate('/enterprise-ai')}
               className="text-foreground hover:text-primary transition-colors interactive"
             >
-              Enterprise AI
+              Enterprise AI Solutions
             </button>
             <button 
               onClick={() => navigate('/creative-technology')}
               className="text-foreground hover:text-primary transition-colors interactive"
             >
-              Creative Tech
+              Creative Technology
             </button>
             <button 
               onClick={() => scrollToSection('contact')}

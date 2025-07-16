@@ -4,18 +4,18 @@ import { Card, CardContent } from '@/components/ui/card';
 const Services = () => {
   const services = [
     {
-      title: "AI Consulting & Learning Tools",
-      description: "Strategic AI implementation for educational institutions and enterprise solutions",
+      title: "AI Consulting & Learning",
+      description: "Strategic AI implementation for educational institutions with proven results in learning assessment and WCAG 2.2 compliance",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop",
-      features: ["AI Learning Assessment", "Educational Technology", "Custom AI Solutions", "Enterprise Integration"],
-      caseStudy: "Partnered with Radford University's IMPACT Lab to develop cutting-edge AI learning and assessment tools"
+      features: ["AI Learning Assessment", "Educational Technology", "Audio Description Generation", "WCAG 2.2 Compliance", "Custom AI Solutions"],
+      caseStudy: "Partnered with Radford University's IMPACT Lab to develop cutting-edge AI learning and assessment tools with accessibility features"
     },
     {
-      title: "Enterprise Workflow Design",
-      description: "Streamlined business processes and AI-powered operational efficiency solutions",
+      title: "Enterprise AI Solutions",
+      description: "Comprehensive AI-powered business solutions including workflow design and operational efficiency optimization",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
-      features: ["Process Automation", "AI Integration", "System Optimization", "Performance Analytics"],
-      caseStudy: "Currently developing AI-powered workflow solutions for 2 enterprise clients, transforming their operational efficiency"
+      features: ["AI Workflow Design", "Process Automation", "System Integration", "Predictive Analytics", "Performance Optimization"],
+      caseStudy: "Currently developing AI-powered workflow solutions for 2 enterprise clients, transforming their operational efficiency with custom automation"
     }
   ];
 
@@ -27,7 +27,7 @@ const Services = () => {
             Our Expertise
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Specialized AI solutions for education and enterprise, with proven results in learning assessment and workflow optimization
+            Specialized AI solutions for education and enterprise, with proven results in learning assessment, workflow optimization, and accessibility compliance
           </p>
         </div>
 
