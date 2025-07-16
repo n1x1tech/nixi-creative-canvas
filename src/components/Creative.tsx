@@ -26,32 +26,18 @@ const Creative = () => {
 
   const creativeProjects = [
     {
-      title: "Live Event Technology",
-      description: "Cutting-edge audiovisual solutions for conferences, concerts, and corporate events",
+      title: "Live Event & Interactive Media Technology",
+      description: "Cutting-edge audiovisual solutions, immersive projection mapping, and interactive installations for conferences, concerts, corporate events, and artistic experiences",
       image: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop",
-      services: ["Audio Engineering", "Visual Systems", "Live Streaming", "Event Automation"],
-      highlight: "Professional Event Solutions"
+      services: ["Audio Engineering", "Visual Systems", "3D Projection Mapping", "Interactive Installations", "Live Streaming", "Event Automation"],
+      highlight: "Immersive Event Solutions"
     },
     {
-      title: "Projection Mapping & Interactive Media",
-      description: "Immersive visual experiences and interactive installations using advanced projection technology",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop",
-      services: ["3D Projection Mapping", "Interactive Installations", "Visual Effects", "Content Creation"],
-      highlight: "Immersive Visual Experiences"
-    },
-    {
-      title: "Website Building & Digital Solutions",
-      description: "Custom web development with modern technologies and AI-powered features",
+      title: "Digital Solutions & Creative Technology Integration",
+      description: "Custom web development with modern technologies, AI-powered features, and innovative technology solutions that bridge creativity and functionality",
       image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=400&fit=crop",
-      services: ["Custom Web Development", "AI Integration", "Responsive Design", "Performance Optimization"],
-      highlight: "Modern Web Technologies"
-    },
-    {
-      title: "Creative Technology Integration",
-      description: "Innovative technology solutions that bridge creativity and functionality",
-      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=600&h=400&fit=crop",
-      services: ["IoT Solutions", "Smart Installations", "Creative Coding", "Technology Consulting"],
-      highlight: "Innovation at the Intersection"
+      services: ["Custom Web Development", "AI Integration", "IoT Solutions", "Smart Installations", "Creative Coding", "Technology Consulting"],
+      highlight: "Modern Digital Innovation"
     }
   ];
 
