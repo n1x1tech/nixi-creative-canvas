@@ -11,11 +11,11 @@ const Footer = () => {
             Transforming education and enterprise through intelligent AI solutions
           </p>
           <div className="flex justify-center space-x-8 mb-6 text-sm text-muted-foreground">
-            <span>AI Learning Assessment</span>
-            <span>•</span>
-            <span>Enterprise Workflow Design</span>
+            <span>Enterprise AI Workflow Design</span>
             <span>•</span>
             <span>University Partnerships</span>
+            <span>•</span>
+            <span>Creative Technology</span>
           </div>
           <div className="text-sm text-muted-foreground">
             © 2025 Nixi Technology. All rights reserved. | info@nixitechnology.com
