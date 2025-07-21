@@ -13,11 +13,42 @@ const Contact = () => {
     company: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success('Message sent successfully! We\'ll get back to you within 24 hours.');
-    setFormData({ name: '', email: '', company: '', message: '' });
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: 'de649a3f-739b-4957-8211-eb8b39808d5c',
+          subject: 'Website Inquiry',
+          name: formData.name,
+          email: formData.email,
+          company: formData.company,
+          message: formData.message,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        toast.success('Message sent successfully! We\'ll get back to you within 24 hours.');
+        setFormData({ name: '', email: '', company: '', message: '' });
+      } else {
+        throw new Error(result.message || 'Failed to send message');
+      }
+    } catch (error) {
+      console.error('Form submission error:', error);
+      toast.error('Failed to send message. Please try again or contact us directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -55,31 +86,16 @@ const Contact = () => {
 
             <div className="space-y-6">
               <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
-                <h4 className="font-bold text-foreground mb-2">Educational Institutions</h4>
+                <h4 className="font-bold text-foreground mb-2">Enterprise Solutions</h4>
                 <p className="text-muted-foreground text-sm">
-                  AI learning tools, assessment systems, and educational technology partnerships
+                  AI workflow automation, system integration, and process optimization consulting
                 </p>
               </div>
 
               <div className="bg-primary/10 border border-primary/20 rounded-lg p-6">
-                <h4 className="font-bold text-foreground mb-2">Enterprise Solutions</h4>
+                <h4 className="font-bold text-foreground mb-2">Educational Institutions</h4>
                 <p className="text-muted-foreground text-sm">
-                  Workflow automation, AI integration, and process optimization consulting
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-background/50 border border-border rounded-lg p-6">
-              <h4 className="font-semibold text-foreground mb-3">Get In Touch</h4>
-              <div className="space-y-2 text-sm">
-                <p className="text-muted-foreground">
-                  <span className="font-medium text-foreground">Email:</span> ncorrigan@nixitechnology.com
-                </p>
-                <p className="text-muted-foreground">
-                  <span className="font-medium text-foreground">Response:</span> Within 24 hours
-                </p>
-                <p className="text-muted-foreground">
-                  <span className="font-medium text-foreground">Consultation:</span> Complimentary project assessment
+                  AI learning tools, assessment systems, and educational technology partnerships
                 </p>
               </div>
             </div>
@@ -98,6 +114,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
+                      disabled={isSubmitting}
                       className="bg-background border-border focus:border-primary"
                       placeholder="Your name"
                     />
@@ -110,6 +127,7 @@ const Contact = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
+                      disabled={isSubmitting}
                       className="bg-background border-border focus:border-primary"
                       placeholder="Organization name"
                     />
@@ -126,6 +144,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
+                    disabled={isSubmitting}
                     className="bg-background border-border focus:border-primary"
                     placeholder="your@email.com"
                   />
@@ -141,6 +160,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     rows={5}
+                    disabled={isSubmitting}
                     className="bg-background border-border focus:border-primary resize-none"
                     placeholder="Tell us about your AI project needs, timeline, and goals..."
                   />
@@ -148,9 +168,10 @@ const Contact = () => {
 
                 <Button 
                   type="submit" 
+                  disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3 interactive hover-scale"
                 >
-                  Send Message
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </CardContent>
