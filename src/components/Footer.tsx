@@ -8,7 +8,7 @@ const Footer = () => {
             NIXI TECHNOLOGY
           </div>
           <p className="text-muted-foreground mb-6">
-            Transforming education and enterprise through intelligent AI solutions
+            Transforming enterprise and education through creative intelligent AI solutions
           </p>
           <div className="flex justify-center space-x-8 mb-6 text-sm text-muted-foreground">
             <span>Enterprise AI Workflow Design</span>
